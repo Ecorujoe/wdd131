@@ -1,0 +1,225 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F7F6;
+    /* Light gray */
+    color: #333333;
+    /* Darker gray text for good contrast */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #005b4f;
+    /* Darker teal for higher contrast */
+    color: #ffffff;
+    /* White text for high contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #005b4f;
+    /* Darker teal for footer */
+    color: #ffffff;
+    /* White text for footer */
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #333333;
+    /* Dark text for labels */
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333333;
+    /* Dark text inside input fields */
+    background-color: #ffffff;
+    /* White background */
+}
+
+/* Submit button - Higher contrast */
+input[type="submit"] {
+    background-color: #005b4f;
+    /* Dark teal background */
+    color: #ffffff;
+    /* White text */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #004d44;
+    /* Darker shade on hover for better contrast */
+}
+
+/* Optional Label Styles */
+.optional {
+    color: #00796b;
+    /* A brighter color that still passes contrast */
+    font-style: italic;
+}
+
+/* Style for the Overall Rating fieldset */
+fieldset.overall_rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Style for individual rating items */
+fieldset.overall_rating .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Optional: Style for the label (stars) */
+fieldset.overall_rating label {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333333;
+    /* Dark color for high contrast */
+}
+
+/* Style for the radio buttons */
+fieldset.overall_rating input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+
+    /* Increase gap between stars and radio buttons on mobile view */
+    fieldset.overall_rating .rating {
+        gap: 10px;
+        /* Increase the gap for mobile devices */
+    }
+
+    /* Optionally, you can reduce the star size to fit better on small screens */
+    fieldset.overall_rating label {
+        font-size: 1.5rem;
+        /* Reduce star size for mobile */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    /* For mobile devices */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    select {
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* For larger screens (tablets/desktops) */
+    header h1 {
+        font-size: 3rem;
+    }
+
+    form {
+        padding: 30px;
+    }
+
+    input[type="submit"] {
+        width: auto;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    .overall_rating {
+        flex-direction: column;
+        /* Stack the items vertically */
+        align-items: center;
+        /* Center the items */
+    }
+
+    .rating {
+        flex: 1 1 100%;
+        /* Make each rating take up the full width */
+    }
+}
+
+/* Tablet/Desktop view */
+@media (min-width: 601px) {
+    .overall_rating {
+        flex-direction: row;
+        /* Display items horizontally */
+    }
+}
