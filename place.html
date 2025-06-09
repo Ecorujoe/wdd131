@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Dynamic Web Fundamentals [Osimiri Ebube]</title>
+    <meta name="description"
+        content="Learn about Nigeria - its geography, weather, culture, and landmarks, as part of the WDD 131 Dynamic Web Fundamentals project by Osimiri Ebube.">
+    <meta name="author" content="Osimiri Ebube">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <!-- Header / Title -->
+    <header>
+        <h1> Nigeria</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/Lagos-Nigeria-Large.webp" media="(min-width: 768px)">
+                <img src="images/Lagos-Nigeria-Small1.webp" alt="Beautiful Landscape of Lagos Nigeria">
+            </picture>
+
+            <!-- Data Section (Overlayed for Wider View) -->
+            <div class="overlay-container">
+                <section class="data">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>Capital:</strong> ikeja</li>
+                        <li><strong>Population:</strong> 17.2 million</li>
+                        <li><strong>Official Languages:</strong> English, Igbo, Hausa, Yoruba</li>
+                        <li><strong>Currency:</strong> Naira (NGN)</li>
+                        <li><strong>Continent:</strong> Africa</li>
+                        <li><strong>Famous Landmark:</strong> Ikoyi Link Bridge</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather ⛅</h2>
+            <div class="weather-icon">
+                <img src="images/weather-icon.svg" alt="Partly Sunny">
+            </div>
+            <ul>
+                <li><strong>Temperature:</strong> 30°C</li>
+                <li><strong>Conditions:</strong> Partly Sunny</li>
+                <li><strong>Wind:</strong> 13 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill">26°C</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="currentyear"></span>  Osimiri Ebube Lagos, Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
