@@ -1,0 +1,105 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #D32F2F; /* Formula 1 Red */
+    --secondary-color: #212121; /* Dark Asphalt */
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+main h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Site Plan Sections */
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-bottom: 10px;
+}
+
+section p, section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
