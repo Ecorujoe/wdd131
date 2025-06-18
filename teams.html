@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F1 Fan Zone – Teams</title>
+  <link rel="stylesheet" href="styles/f1.css">
+</head>
+<body>
+  <header>
+    <h1>F1 Fan Zone- Teams</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="f1racing.html" class="active">Circuits</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <img src="images/f1-hero.webp" alt="Red Bull pit stop" loading="lazy">
+    </picture>
+    <div class="hero-text">
+      <h2>Meet the 2025 Grids</h2>
+      <p class="intro-line">All ten teams, their drivers and key stats.</p>
+    </div>
+  </section>
+
+  <section class="destination-details">
+    <h2>Constructors</h2>
+
+    <div class="destination-section">
+      <h3>Oracle Red Bull Racing</h3>
+      <img src="images/redbull-pit-stop.webp" alt="Red Bull Racing" loading="lazy">
+      <p>Drivers: Max Verstappen &amp; Sergio Pérez<br>
+         Power-Unit: Honda RBPT</p>
+    </div>
+
+    <div class="destination-section">
+      <h3>Scuderia Ferrari</h3>
+      <img src="images/Scuderia_Ferrari.webp" alt="Scuderia Ferrari" loading="lazy">
+      <p>Drivers: Charles Leclerc &amp; Carlos Sainz<br>
+         Power-Unit: Ferrari</p>
+    </div>
+
+    <div class="destination-section">
+      <h3>Mercedes-AMG Petronas</h3>
+      <img src="images/Scuderia_Ferrari.webp" alt="Mercedes F1" loading="lazy">
+      <p>Drivers: Lewis Hamilton &amp; George Russell<br>
+         Power-Unit: Mercedes</p>
+    </div>
+
+    <!-- …add the remaining seven teams the same way if you like… -->
+  </section>
+
+    <footer>
+    <p>&copy; <span id="current-year"></span> 🏎️ F1 Fan Zone 🏎️</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+
+    <nav class="sociallinks">
+      <a href="https://facebook.com" title="Facebook"><img src="images/fb.png" alt="Facebook Logo"></a>
+      <a href="https://twitter.com" title="Twitter"><img src="images/twitter.jpg" alt="Twitter Logo"></a>
+      <a href="https://instagram.com" title="Instagram"><img src="images/instagram.jpg" alt="Instagram Logo"></a>
+    </nav>
+
+    <nav>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    document.getElementById('last-modified').textContent = document.lastModified;
+  </script>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

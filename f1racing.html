@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="F1 Fan Zone is your hub for Formula 1 racing news, teams, circuits, and race highlights." />
+  <meta name="author" content="Osimiri Ebube" >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/f1.css" />
+  <title>F1 Fan Zone - Circuits & Teams</title>
+</head>
+
+<body>
+  <header>
+    <h1>F1 Fan Zone- Circuits</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="f1racing.html" class="active">Circuits</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/f1-hero.webp" type="image/webp">
+        <img src="images/f1-hero.webp" alt="Formula 1 racing track" loading="lazy" />
+      </picture>
+      <div class="hero-text">
+        <h2>Welcome to the Ultimate Formula 1 Experience</h2>
+        <p class="intro-line">Dive into the world of high-speed thrills, elite teams, and legendary tracks.</p>
+      </div>
+    </section>
+
+    <!-- Featured Circuits -->
+    <section class="destination-details">
+      <h2>Iconic F1 Circuits</h2>
+
+      <!-- Monaco -->
+      <div class="destination-section">
+        <h3>Melbourne Grand Prix</h3>
+        <img src="images/Melbourne_Grand_Prix_Circuit.webp" alt="Melbourne Grand Prix" loading="lazy">
+        <p>The Melbourne Grand Prix is a legendary street circuit known for its glamour, tight corners, and zero room for error.</p>
+        <h4>Race Facts:</h4>
+        <p>Held in Monte Carlo, it's one of the most prestigious races in the world, part of the Triple Crown of Motorsport.</p>
+        <a href="https://en.wikipedia.org/wiki/Melbourne_Grand_Prix" target="_blank">Learn More About Melbourne GP</a>
+      </div>
+
+      <!-- Silverstone -->
+      <div class="destination-section">
+        <h3>Silverstone Circuit</h3>
+        <img src="images/silverstoneCircuit.webp" alt="Silverstone Circuit" loading="lazy">
+        <p>Home of British motorsport, Silverstone delivers high-speed action with iconic corners like Copse and Maggotts-Becketts.</p>
+        <h4>Fun Fact:</h4>
+        <ul>
+          <li>First F1 World Championship race held here in 1950</li>
+          <li>Often delivers dramatic British GP finishes</li>
+        </ul>
+        <a href="https://en.wikipedia.org/wiki/Silverstone_Circuit" target="_blank">Learn More About Silverstone</a>
+      </div>
+
+      <!-- Suzuka -->
+      <div class="destination-section">
+        <h3>Suzuka International Circuit</h3>
+        <img src="images/suzuka.jpg" alt="Suzuka Circuit" loading="lazy">
+        <p>One of the few figure-eight tracks in the world, Suzuka in Japan is a fan and driver favorite for its technical challenge.</p>
+        <h4>Highlight:</h4>
+        <p>Regularly the decider of world championships due to its late-season spot and demanding corners like 130R.</p>
+        <a href="https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course" target="_blank">Learn More About Suzuka</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> 🏎️ F1 Fan Zone 🏎️</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+
+    <nav class="sociallinks">
+      <a href="https://facebook.com" title="Facebook"><img src="images/fb.png" alt="Facebook Logo"></a>
+      <a href="https://twitter.com" title="Twitter"><img src="images/twitter.jpg" alt="Twitter Logo"></a>
+      <a href="https://instagram.com" title="Instagram"><img src="images/instagram.jpg" alt="Instagram Logo"></a>
+    </nav>
+
+    <nav>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    document.getElementById('last-modified').textContent = document.lastModified;
+  </script>
+</body>
+
+</html>
